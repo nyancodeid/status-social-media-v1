@@ -1,0 +1,366 @@
+.notif-msg {
+	padding: 8px;
+	background-color: #4CAF50;
+    color: #FFF;
+}
+.statusCard {
+    background: #424242 !important;
+    margin: 0 0 8px 0;
+    padding: 8px;
+}
+.statusCard p {
+  text-align: left;
+}
+.notif-msg > p {
+	margin: 0;
+}
+.no-margin {
+	margin: 0;
+}
+.content-padding-16 {
+	padding: 16px;
+}
+.content-padding-8 {
+	padding: 8px;
+}
+.tiny {
+	margin: 4px 0 0 0;
+	padding: 0 8px;
+}
+.tiny-content {
+	padding: 0 8px;
+}
+.sad {
+	font-size: 62px;
+	color: rgba(0,0,0,0.4);
+	font-family: 'Roboto Mono',monospace;
+}
+.content-nowrap {
+	padding: 8px 0;
+	white-space: nowrap;
+}
+.toolbar-fixed .toolbar {
+	box-shadow: 0 8px 10px -4px rgba(0,0,0,.2) !important;
+}
+.icon > .badge {
+	border-radius: 50%;
+}
+.menu-bottom {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    box-shadow: none !important;
+    padding-bottom: 16px;
+
+    background-color: #EEEEEE;
+    border-top: 3px solid #E0E0E0;
+}
+.col-6 {
+	width: calc(50% - 0.5px);
+}
+span.help {
+    color: white;
+    background-color: #2196f3;
+    padding: 1px 6px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.ks-facebook-card .card-header {
+  display: block;
+  padding: 10px;
+}
+.ks-facebook-card .ks-facebook-avatar {
+  float: left;
+}
+.ks-facebook-card .ks-facebook-name {
+  margin-left: 44px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.ks-facebook-card .ks-facebook-date {
+  margin-left: 44px;
+  font-size: 13px;
+  color: #8e8e93;
+}
+.ks-facebook-card .card-footer {
+  background: #fafafa;
+}
+.ks-facebook-card .card-footer a {
+  color: #81848b;
+  font-weight: 500;
+}
+.ks-facebook-card .card-content img {
+  display: block;
+  width: 100%;
+}
+.ks-facebook-card .card-content-inner {
+  padding: 15px 10px;
+}
+
+/* preventing reflow lazy image setup */
+.js .afkl-lazy-wrapper {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+/* auto size our image */
+.afkl-lazy-wrapper .afkl-lazy-image {
+  width: 100%;
+}
+
+/* default loading state */
+.afkl-lazy-image-loading {
+  background-color: #eee;
+}
+
+
+/* available ratio's, make your own if they are different on different devices or simply extend */
+.afkl-img-ratio-4-2,
+.afkl-img-ratio-2-1 {
+  padding-bottom: 50%; /* (2/4)*100 */
+}
+.afkl-img-ratio-16-9 {
+  padding-bottom: 56.25%; /* (9/16)*100 */
+}
+.afkl-img-ratio-3-2 {
+  padding-bottom: 66.67%; /* now calculation is clear, right :) */;
+}
+.afkl-img-ratio-1-1 {
+  padding-bottom: 100%;
+}
+.afkl-img-ratio-4-3 {
+  padding-bottom: 75%;
+}
+.afkl-img-ratio-3-4 {
+  padding-bottom: 133%;
+}
+i.icon.iconFavorite {
+  display: inline-block !important;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg%20fill%3D%22%23F44336%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M12%2021.35l-1.45-1.32C5.4%2015.36%202%2012.28%202%208.5%202%205.42%204.42%203%207.5%203c1.74%200%203.41.81%204.5%202.09C13.09%203.81%2014.76%203%2016.5%203%2019.58%203%2022%205.42%2022%208.5c0%203.78-3.4%206.86-8.55%2011.54L12%2021.35z%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+i.icon.iconNonFavorite {
+  display: inline-block !important;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg%20fill%3D%22%23FFFFFF%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16.5%203c-1.74%200-3.41.81-4.5%202.09C10.91%203.81%209.24%203%207.5%203%204.42%203%202%205.42%202%208.5c0%203.78%203.4%206.86%208.55%2011.54L12%2021.35l1.45-1.32C18.6%2015.36%2022%2012.28%2022%208.5%2022%205.42%2019.58%203%2016.5%203zm-4.4%2015.55l-.1.1-.1-.1C7.14%2014.24%204%2011.39%204%208.5%204%206.5%205.5%205%207.5%205c1.54%200%203.04.99%203.57%202.36h1.87C13.46%205.99%2014.96%205%2016.5%205c2%200%203.5%201.5%203.5%203.5%200%202.89-3.14%205.74-7.9%2010.05z%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+i.icon.iconCopy {
+  display: inline-block !important;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg%20fill%3D%22%23FFFFFF%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M16%201H4c-1.1%200-2%20.9-2%202v14h2V3h12V1zm3%204H8c-1.1%200-2%20.9-2%202v14c0%201.1.9%202%202%202h11c1.1%200%202-.9%202-2V7c0-1.1-.9-2-2-2zm0%2016H8V7h11v14z%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+i.icon.icon-refresh {
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xMiA2djNsNC00LTQtNHYzYy00LjQyIDAtOCAzLjU4LTggOCAwIDEuNTcuNDYgMy4wMyAxLjI0IDQuMjZMNi43IDE0LjhjLS40NS0uODMtLjctMS43OS0uNy0yLjggMC0zLjMxIDIuNjktNiA2LTZ6bTYuNzYgMS43NEwxNy4zIDkuMmMuNDQuODQuNyAxLjc5LjcgMi44IDAgMy4zMS0yLjY5IDYtNiA2di0zbC00IDQgNCA0di0zYzQuNDIgMCA4LTMuNTggOC04IDAtMS41Ny0uNDYtMy4wMy0xLjI0LTQuMjZ6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPg==");
+}
+.pesan {
+    font-size: 18px;
+    background-color: #dcdcdc;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+}
+#instruction li {
+    text-align: justify;
+    text-justify: inter-word;
+}
+#overlay-preloader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 9999;
+    padding-top: 20vh;
+  }
+  #overlay-preloader h4 {
+    max-width: 90%;
+  }
+  .cssload-thecube {
+    width: 73px;
+    height: 73px;
+    margin: 0 auto;
+    margin-top: 49px;
+    position: relative;
+    transform: rotateZ(45deg);
+      -o-transform: rotateZ(45deg);
+      -ms-transform: rotateZ(45deg);
+      -webkit-transform: rotateZ(45deg);
+      -moz-transform: rotateZ(45deg);
+  }
+  .cssload-thecube .cssload-cube {
+    position: relative;
+    transform: rotateZ(45deg);
+      -o-transform: rotateZ(45deg);
+      -ms-transform: rotateZ(45deg);
+      -webkit-transform: rotateZ(45deg);
+      -moz-transform: rotateZ(45deg);
+  }
+  .cssload-thecube .cssload-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+  }
+  .cssload-thecube .cssload-cube:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43,160,199);
+    animation: cssload-fold-thecube 2.76s infinite linear both;
+      -o-animation: cssload-fold-thecube 2.76s infinite linear both;
+      -ms-animation: cssload-fold-thecube 2.76s infinite linear both;
+      -webkit-animation: cssload-fold-thecube 2.76s infinite linear both;
+      -moz-animation: cssload-fold-thecube 2.76s infinite linear both;
+    transform-origin: 100% 100%;
+      -o-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+      -webkit-transform-origin: 100% 100%;
+      -moz-transform-origin: 100% 100%;
+  }
+  .cssload-thecube .cssload-c2 {
+    transform: scale(1.1) rotateZ(90deg);
+      -o-transform: scale(1.1) rotateZ(90deg);
+      -ms-transform: scale(1.1) rotateZ(90deg);
+      -webkit-transform: scale(1.1) rotateZ(90deg);
+      -moz-transform: scale(1.1) rotateZ(90deg);
+  }
+  .cssload-thecube .cssload-c3 {
+    transform: scale(1.1) rotateZ(180deg);
+      -o-transform: scale(1.1) rotateZ(180deg);
+      -ms-transform: scale(1.1) rotateZ(180deg);
+      -webkit-transform: scale(1.1) rotateZ(180deg);
+      -moz-transform: scale(1.1) rotateZ(180deg);
+  }
+  .cssload-thecube .cssload-c4 {
+    transform: scale(1.1) rotateZ(270deg);
+      -o-transform: scale(1.1) rotateZ(270deg);
+      -ms-transform: scale(1.1) rotateZ(270deg);
+      -webkit-transform: scale(1.1) rotateZ(270deg);
+      -moz-transform: scale(1.1) rotateZ(270deg);
+  }
+  .cssload-thecube .cssload-c2:before {
+    animation-delay: 0.35s;
+      -o-animation-delay: 0.35s;
+      -ms-animation-delay: 0.35s;
+      -webkit-animation-delay: 0.35s;
+      -moz-animation-delay: 0.35s;
+  }
+  .cssload-thecube .cssload-c3:before {
+    animation-delay: 0.69s;
+      -o-animation-delay: 0.69s;
+      -ms-animation-delay: 0.69s;
+      -webkit-animation-delay: 0.69s;
+      -moz-animation-delay: 0.69s;
+  }
+  .cssload-thecube .cssload-c4:before {
+    animation-delay: 1.04s;
+      -o-animation-delay: 1.04s;
+      -ms-animation-delay: 1.04s;
+      -webkit-animation-delay: 1.04s;
+      -moz-animation-delay: 1.04s;
+  }
+
+
+
+  @keyframes cssload-fold-thecube {
+    0%, 10% {
+      transform: perspective(136px) rotateX(-180deg);
+      opacity: 0;
+    }
+    25%,
+          75% {
+      transform: perspective(136px) rotateX(0deg);
+      opacity: 1;
+    }
+    90%,
+          100% {
+      transform: perspective(136px) rotateY(180deg);
+      opacity: 0;
+    }
+  }
+
+  @-o-keyframes cssload-fold-thecube {
+    0%, 10% {
+      -o-transform: perspective(136px) rotateX(-180deg);
+      opacity: 0;
+    }
+    25%,
+          75% {
+      -o-transform: perspective(136px) rotateX(0deg);
+      opacity: 1;
+    }
+    90%,
+          100% {
+      -o-transform: perspective(136px) rotateY(180deg);
+      opacity: 0;
+    }
+  }
+
+  @-ms-keyframes cssload-fold-thecube {
+    0%, 10% {
+      -ms-transform: perspective(136px) rotateX(-180deg);
+      opacity: 0;
+    }
+    25%,
+          75% {
+      -ms-transform: perspective(136px) rotateX(0deg);
+      opacity: 1;
+    }
+    90%,
+          100% {
+      -ms-transform: perspective(136px) rotateY(180deg);
+      opacity: 0;
+    }
+  }
+
+  @-webkit-keyframes cssload-fold-thecube {
+    0%, 10% {
+      -webkit-transform: perspective(136px) rotateX(-180deg);
+      opacity: 0;
+    }
+    25%,
+          75% {
+      -webkit-transform: perspective(136px) rotateX(0deg);
+      opacity: 1;
+    }
+    90%,
+          100% {
+      -webkit-transform: perspective(136px) rotateY(180deg);
+      opacity: 0;
+    }
+  }
+
+  @-moz-keyframes cssload-fold-thecube {
+    0%, 10% {
+      -moz-transform: perspective(136px) rotateX(-180deg);
+      opacity: 0;
+    }
+    25%,
+          75% {
+      -moz-transform: perspective(136px) rotateX(0deg);
+      opacity: 1;
+    }
+    90%,
+          100% {
+      -moz-transform: perspective(136px) rotateY(180deg);
+      opacity: 0;
+    }
+  }
+
