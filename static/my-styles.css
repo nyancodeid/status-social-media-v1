@@ -3,6 +3,12 @@
 	background-color: #4CAF50;
     color: #FFF;
 }
+.notifications .notification-item {
+  background-color: #3f51b5;
+}
+.notifications .notification-item .button {
+  color: #FFF;
+}
 .statusCard {
     background: #424242 !important;
     margin: 0 0 8px 0;

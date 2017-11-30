@@ -17,13 +17,11 @@
 	var viewNow;
 
 	$$.ajax({
-		url: 'vendors/thumbnail/category.dat',
+		url: 'vendors/thumbnail/status.dat',
 		cache: true,
 		success: function(data) {
-			var category = CryptoJS.AES.decrypt(data, Key).toString(CryptoJS.enc.Utf8);
-				category = JSON.parse(category);
-
-			nyanStorage.put('dataCategory', category);
+			var status = CryptoJS.AES.decrypt(data, Key).toString(CryptoJS.enc.Utf8);
+			nyanStorage.put('dataStatus', status);	
 		}
 	});
 
@@ -88,14 +86,18 @@
 			$scope.index = 0;
 			$scope.view = 8;
 			
-			if (!nyanStorage.isAvailable('dataStatus')) {
+			if (!nyanStorage.isAvailable('dataCategory')) {
 				$$.ajax({
-					url: 'vendors/thumbnail/status.dat',
+					url: 'vendors/thumbnail/category.dat',
 					cache: true,
 					success: function(data) {
-						var status = CryptoJS.AES.decrypt(data, Key).toString(CryptoJS.enc.Utf8);
-						nyanStorage.put('dataStatus', status);	
-						status = JSON.parse(status);
+						var category = CryptoJS.AES.decrypt(data, Key).toString(CryptoJS.enc.Utf8);
+							Category = JSON.parse(category);
+
+						$scope.$apply(function() {
+							$scope.dataCategory = Category;
+						});
+						nyanStorage.put('dataCategory', category);
 
 						setTimeout(function() {
 							$$('#overlay-preloader').hide();
@@ -265,7 +267,7 @@
 					_.templateSettings = {
 						interpolate: /\{\{(.+?)\}\}/g
 					};
-					var templateDOM = _.template("<div class='card statusCard'><div class='card-body' align='right'><p>{{ status }}</p><button data-status='{{ status }}' class='buttonCopy icon iconCopy'></button></div></div>");
+					var templateDOM = _.template("<div class='card statusCard'><div class='card-body'><p>{{ status }}</p><div class='card-footer' style='padding-right:0;'><a class='link icon-only' data-id='{{ status_id }}'><i class='icon iconNonFavorite'></i></a><a class='link icon-only buttonCopy' data-status='{{ status }}'><i class='icon iconCopy'></i></a></div></div></div>");
 
 					$$(page.container).find('#ListOfStatus').append(templateDOM(status));
 				});
